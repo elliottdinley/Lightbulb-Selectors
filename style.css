@@ -43,6 +43,10 @@ body {
     box-shadow: 0 0 35px white;
 }
 
+.lightbulb:hover {
+    transform: scale(1.05);
+}
+
 .title, .subtitle {
     color: white;
     text-align: center;
