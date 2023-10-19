@@ -8,6 +8,10 @@ body {
     background-color: black;
 }
 
+#dropdown {
+    font-size: inherit;
+}
+
 #wrapper {
     width: 90vw;
     max-width: 90%;
