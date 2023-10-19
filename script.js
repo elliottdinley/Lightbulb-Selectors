@@ -1,9 +1,9 @@
 let lightbulbs = document.querySelectorAll("div .item");
-let output = document.querySelector("h3.subtitle:first-of-type");
+const output = document.querySelector("h3.subtitle:first-of-type");
 let count = 0;
 
-const amount_of_lightbulbs = document.querySelector("#dropdown")
-const row_of_lightbulbs = document.querySelector(".row")
+const amount_of_lightbulbs = document.querySelector("#dropdown");
+const row_of_lightbulbs = document.querySelector(".row");
 
 function updateEventListeners() {
     lightbulbs.forEach(function(lb) {
@@ -25,13 +25,10 @@ amount_of_lightbulbs.addEventListener("change", function() {
 
     for (let i = 0; i < selected_value; i++) {
         const new_lightbulb = `<div id="lightbulb${i + 1}" class="item lightbulb">💡</div>`;
-        row_of_lightbulbs.insertAdjacentHTML("beforeend", new_lightbulb)
+        row_of_lightbulbs.insertAdjacentHTML("beforeend", new_lightbulb);
     }
-    
-    console.log(row_of_lightbulbs)
-    lightbulbs = document.querySelectorAll("div .item")
-    console.log(lightbulbs)
-    updateEventListeners()
+    lightbulbs = document.querySelectorAll("div .item");
+    updateEventListeners();
 });
 
-updateEventListeners()
+updateEventListeners();
