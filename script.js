@@ -5,11 +5,11 @@ let count = 0;
 lightbulbs.forEach(function(lb) {
     lb.addEventListener("click", function() {
         lb.classList.toggle("active");
-        count ++
+        count ++;
         if (count === 1) {
-            output.innerHTML = "You've clicked the lights " + count + " time"
+            output.innerHTML = "You've clicked the lights " + count + " time";
         } else {
-            output.innerHTML = "You've clicked the lights " + count + " times"
-        }
+            output.innerHTML = "You've clicked the lights " + count + " times";
+        };
     });
 });
